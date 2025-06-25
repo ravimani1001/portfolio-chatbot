@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; light theme */
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Dark mode scrollbar support */
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937; /* Tailwind's dark gray-800 */
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Tailwind's gray-600 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280; /* Tailwind's gray-500 */
+}
+
+/* index.css */
+.bot-message a {
+  color: #3b82f6; /* Tailwind blue-500 */
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.dark .bot-message a {
+  color: #60a5fa; /* Tailwind blue-400 */
+}

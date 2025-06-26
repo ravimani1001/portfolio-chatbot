@@ -3,7 +3,7 @@ function MessageBubble({ sender, text }) {
   const urlRegex = /(https?:\/\/[^\s]+)/g;
 
   const processedText = text.replace(urlRegex, (url) => {
-    return `<a href="${url}" class="text-blue-500 underline break-all" target="_blank" rel="noopener noreferrer">${url}</a>`;
+    return `<a href="${url.replace(/[.,!?;:]+$/, "")}" class="text-blue-500 underline break-all" target="_blank" rel="noopener noreferrer">${url}</a>`;
   });
 
   return (

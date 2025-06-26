@@ -5,7 +5,7 @@ import { Send, SendHorizontal  } from "lucide-react";
 
 function ChatWindow() {
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Hi! I’m Ravi AI Assistant . Ask me anything about his works." },
+    { sender: "bot", text: "Hi! I’m Ravi's AI Assistant . Ask me anything about his works." },
     { sender: "bot", text: "You can ask questions like - " },
     { sender: "bot", text: "What are Ravi’s technical skills?" },
     { sender: "bot", text: "Can you tell me about Ravi's projects?" },
